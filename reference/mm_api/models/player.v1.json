@@ -15,10 +15,12 @@
       "type": "string"
     },
     "truegold": {
-      "type": "integer"
+      "type": "integer",
+      "description": "Gold purchased with real money"
     },
     "bonusgold": {
-      "type": "integer"
+      "type": "integer",
+      "description": "Gold acquired by ingame activity"
     },
     "truecreds": {
       "type": "integer"
@@ -30,7 +32,8 @@
       "type": "integer"
     },
     "experience": {
-      "type": "number"
+      "type": "number",
+      "description": "Player current experience"
     },
     "avatar": {
       "type": "string"

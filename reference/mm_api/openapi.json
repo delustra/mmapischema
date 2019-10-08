@@ -76,7 +76,7 @@
     },
     "/fetchlocation": {
       "post": {
-        "summary": "",
+        "summary": "/fetchlocation",
         "responses": {
           "200": {
             "description": "OK",
@@ -175,7 +175,7 @@
         }
       ],
       "get": {
-        "summary": "Your GET endpoint",
+        "summary": "/login",
         "tags": [],
         "responses": {
           "200": {
