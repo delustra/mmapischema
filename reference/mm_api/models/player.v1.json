@@ -1,45 +1,60 @@
 {
   "title": "Model: Player",
   "type": "object",
+  "x-examples": {},
+  "description": "Player",
   "properties": {
     "id": {
-      "type": "string"
+      "type": "string",
+      "example": "246accee-c923-4926-aafb-fd4a89fa0849"
     },
     "nickname": {
-      "type": "string"
+      "type": "string",
+      "example": "Master Demon"
     },
     "cognitoid": {
-      "type": "string"
+      "type": "string",
+      "example": "866e4a53-b2e6-4282-b028-0601ed5812d7"
     },
     "date_created": {
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "truegold": {
-      "type": "integer"
+      "type": "integer",
+      "example": 10000
     },
     "bonusgold": {
-      "type": "integer"
+      "type": "integer",
+      "example": 52
     },
     "truecreds": {
-      "type": "integer"
+      "type": "integer",
+      "example": 986412354
     },
     "bonuscreds": {
-      "type": "integer"
+      "type": "integer",
+      "example": 55669
     },
     "mobskilled": {
-      "type": "integer"
+      "type": "integer",
+      "example": 418
     },
     "experience": {
-      "type": "number"
+      "type": "number",
+      "example": 10568
     },
     "avatar": {
-      "type": "string"
+      "type": "string",
+      "format": "uri"
     },
     "level": {
-      "type": "number"
+      "type": "number",
+      "example": 15
     },
     "current_locationid": {
-      "type": "string"
+      "type": "string",
+      "example": "cats"
     },
     "preferred_locale": {
       "type": "array",
@@ -54,7 +69,5 @@
         "type": "string"
       }
     }
-  },
-  "x-examples": {},
-  "description": "Player"
+  }
 }

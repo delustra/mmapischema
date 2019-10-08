@@ -1,6 +1,8 @@
 {
   "title": "Model: Mob",
   "type": "object",
+  "x-examples": {},
+  "description": "Mob",
   "properties": {
     "id": {
       "type": "string",
@@ -28,14 +30,13 @@
       "format": "uri"
     },
     "date_created": {
-      "type": "string"
+      "type": "string",
+      "format": "date-time"
     },
     "killed": {
       "type": "integer",
       "description": "How many times was this exactm mob killed before",
       "format": "int32"
     }
-  },
-  "x-examples": {},
-  "description": "Mob"
+  }
 }
