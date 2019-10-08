@@ -3,19 +3,23 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "string"
+      "type": "string",
+      "example": "smpl_mob_id"
     },
     "title": {
       "type": "object",
       "properties": {
         "en": {
-          "type": "string"
+          "type": "string",
+          "example": "The Mob"
         },
         "ru": {
-          "type": "string"
+          "type": "string",
+          "example": "Типа Моб"
         },
         "de": {
-          "type": "string"
+          "type": "string",
+          "example": "Das Mob"
         }
       }
     },
@@ -28,7 +32,8 @@
     },
     "killed": {
       "type": "integer",
-      "description": "How many times was this exactm mob killed before"
+      "description": "How many times was this exactm mob killed before",
+      "format": "int32"
     }
   }
 }

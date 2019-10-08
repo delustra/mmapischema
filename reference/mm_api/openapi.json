@@ -69,7 +69,15 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            }
           }
         }
       }
@@ -86,10 +94,12 @@
                   "type": "object",
                   "properties": {
                     "title": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "Example Location Title"
                     },
                     "locationid": {
-                      "type": "string"
+                      "type": "string",
+                      "example": "examp_loc_id"
                     },
                     "mobspack": {
                       "type": "array",
@@ -99,9 +109,7 @@
                     }
                   }
                 },
-                "examples": {
-                  "example-1": {}
-                }
+                "examples": {}
               }
             }
           }
