@@ -112,8 +112,9 @@
                     },
                     "mobspack": {
                       "type": "array",
+                      "uniqueItems": true,
                       "maxItems": 4,
-                      "minItems": 1,
+                      "minItems": 2,
                       "items": {
                         "$ref": "./models/mob.v1.json"
                       }

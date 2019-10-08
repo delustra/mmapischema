@@ -6,7 +6,7 @@
   "properties": {
     "id": {
       "type": "string",
-      "example": "smpl_mob_id"
+      "faker": "random.uuid"
     },
     "title": {
       "type": "object",
