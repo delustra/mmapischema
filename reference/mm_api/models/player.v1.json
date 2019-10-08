@@ -40,6 +40,20 @@
     },
     "current_locationid": {
       "type": "string"
+    },
+    "preferred_locale": {
+      "type": "array",
+      "enum": [
+        "EN",
+        "RU",
+        "CN",
+        "ES",
+        "DE"
+      ],
+      "items": {
+        "type": "string"
+      }
     }
-  }
+  },
+  "x-examples": {}
 }

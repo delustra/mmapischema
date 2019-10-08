@@ -163,33 +163,33 @@
       },
       "parameters": []
     },
-    "/player/{playerid}": {
-      "parameters": [
-        {
-          "schema": {
-            "type": "string"
-          },
-          "name": "playerid",
-          "in": "path",
-          "required": true
-        }
-      ],
-      "get": {
+    "/login": {
+      "parameters": [],
+      "post": {
         "summary": "/login",
-        "tags": [],
         "responses": {
           "200": {
             "description": "OK",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "./models/player.v1.json"
+                  "type": "object",
+                  "properties": {}
                 }
               }
             }
           }
         },
-        "description": "Login method"
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "default": "PMAK-5d8fb40585c5df003c8ef8c0-9d06fdf950e3a771244a128b23aacb72a2"
+            },
+            "in": "header",
+            "name": "x-api-key"
+          }
+        ]
       }
     }
   },
