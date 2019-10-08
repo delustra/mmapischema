@@ -55,5 +55,6 @@
       }
     }
   },
-  "x-examples": {}
+  "x-examples": {},
+  "description": "Player"
 }

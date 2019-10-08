@@ -39,5 +39,6 @@
         "$ref": "./mob.v1.json"
       }
     }
-  }
+  },
+  "description": "Location"
 }

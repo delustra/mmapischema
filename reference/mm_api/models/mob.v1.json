@@ -35,5 +35,7 @@
       "description": "How many times was this exactm mob killed before",
       "format": "int32"
     }
-  }
+  },
+  "x-examples": {},
+  "description": "Mob"
 }
