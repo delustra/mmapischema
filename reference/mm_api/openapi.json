@@ -112,9 +112,9 @@
                     },
                     "mobspack": {
                       "type": "array",
-                      "uniqueItems": true,
+                      "uniqueItems": false,
                       "maxItems": 4,
-                      "minItems": 2,
+                      "minItems": 3,
                       "items": {
                         "$ref": "./models/mob.v1.json"
                       }
@@ -208,7 +208,26 @@
             "in": "header",
             "name": "x-api-key"
           }
-        ]
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "username": {
+                    "type": "string",
+                    "format": "hostname"
+                  },
+                  "password": {
+                    "type": "string",
+                    "format": "password"
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   },
