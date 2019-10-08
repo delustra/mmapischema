@@ -30,7 +30,7 @@
     "id": {
       "type": "string"
     },
-    "locationtitle": {
+    "title": {
       "type": "string"
     },
     "mobs": {

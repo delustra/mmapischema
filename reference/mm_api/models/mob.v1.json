@@ -19,11 +19,16 @@
         }
       }
     },
-    "imglink": {
-      "type": "string"
+    "link": {
+      "type": "string",
+      "format": "uri"
     },
     "date_created": {
       "type": "string"
+    },
+    "killed": {
+      "type": "integer",
+      "description": "How many times was this exactm mob killed before"
     }
   }
 }
