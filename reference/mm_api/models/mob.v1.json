@@ -1,5 +1,5 @@
 {
-  "title": "Mob",
+  "title": "Model: Mob",
   "type": "object",
   "properties": {
     "id": {
@@ -15,9 +15,6 @@
           "type": "string"
         },
         "de": {
-          "type": "string"
-        },
-        "": {
           "type": "string"
         }
       }

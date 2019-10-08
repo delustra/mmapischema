@@ -1,5 +1,5 @@
 {
-  "title": "Player",
+  "title": "Model: Player",
   "type": "object",
   "properties": {
     "id": {
@@ -15,12 +15,10 @@
       "type": "string"
     },
     "truegold": {
-      "type": "integer",
-      "description": "Gold purchased with real money"
+      "type": "integer"
     },
     "bonusgold": {
-      "type": "integer",
-      "description": "Gold acquired by ingame activity"
+      "type": "integer"
     },
     "truecreds": {
       "type": "integer"
@@ -32,8 +30,7 @@
       "type": "integer"
     },
     "experience": {
-      "type": "number",
-      "description": "Player current experience"
+      "type": "number"
     },
     "avatar": {
       "type": "string"
