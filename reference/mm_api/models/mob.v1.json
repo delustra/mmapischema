@@ -36,7 +36,8 @@
     "killed": {
       "type": "integer",
       "description": "How many times was this exactm mob killed before",
-      "format": "int32"
+      "format": "int32",
+      "minimum": 2
     }
   }
 }
