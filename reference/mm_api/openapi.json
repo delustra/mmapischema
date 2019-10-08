@@ -2,7 +2,7 @@
   "openapi": "3.0.0",
   "info": {
     "title": "MM_API",
-    "version": "1.1",
+    "version": "1.2",
     "description": "MoreMobs API",
     "contact": {
       "name": "DeLustra"
@@ -194,12 +194,6 @@
     }
   },
   "components": {
-    "securitySchemes": {
-      "x-api-key": {
-        "name": "PMAK-5d8fb40585c5df003c8ef8c0-9d06fdf950e3a771244a128b23aacb72a2",
-        "type": "apiKey",
-        "in": "header"
-      }
-    }
+    "securitySchemes": {}
   }
 }
