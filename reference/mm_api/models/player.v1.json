@@ -1,0 +1,45 @@
+{
+  "title": "Player",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "nickname": {
+      "type": "string"
+    },
+    "cognitoid": {
+      "type": "string"
+    },
+    "date_created": {
+      "type": "string"
+    },
+    "truegold": {
+      "type": "integer"
+    },
+    "bonusgold": {
+      "type": "integer"
+    },
+    "truecreds": {
+      "type": "integer"
+    },
+    "bonuscreds": {
+      "type": "integer"
+    },
+    "mobskilled": {
+      "type": "integer"
+    },
+    "experience": {
+      "type": "number"
+    },
+    "avatar": {
+      "type": "string"
+    },
+    "level": {
+      "type": "number"
+    },
+    "current_locationid": {
+      "type": "string"
+    }
+  }
+}

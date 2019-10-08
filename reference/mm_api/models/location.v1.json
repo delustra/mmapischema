@@ -1,0 +1,43 @@
+{
+  "title": "Location",
+  "type": "object",
+  "x-examples": {
+    "example-1": {
+      "value": {
+        "title": "Default Location",
+        "locationid": "default_location",
+        "mobspack": [
+          {
+            "Id": "testmob1",
+            "ImgLink": "https://starrfmonline.com/wp-content/uploads/2017/06/Theresa-may.jpg",
+            "Title": "Cool British Girl"
+          },
+          {
+            "Id": "testmob4",
+            "ImgLink": "https://i.ytimg.com/vi/j4enT3LrqEA/maxresdefault.jpg",
+            "Title": "Леопольд"
+          },
+          {
+            "Id": "testmob9",
+            "ImgLink": "https://scontent-yyz1-1.cdninstagram.com/vp/a0f60687764e3788ccde27ca1fd74fec/5E0641A4/t51.2885-15/e35/69493393_687919728354830_1506198650268018570_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_cat=102",
+            "Title": "man"
+          }
+        ]
+      }
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "locationtitle": {
+      "type": "string"
+    },
+    "mobs": {
+      "type": "array",
+      "items": {
+        "$ref": "./mob.v1.json"
+      }
+    }
+  }
+}

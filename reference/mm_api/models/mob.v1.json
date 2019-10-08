@@ -1,0 +1,32 @@
+{
+  "title": "Mob",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "object",
+      "properties": {
+        "en": {
+          "type": "string"
+        },
+        "ru": {
+          "type": "string"
+        },
+        "de": {
+          "type": "string"
+        },
+        "": {
+          "type": "string"
+        }
+      }
+    },
+    "imglink": {
+      "type": "string"
+    },
+    "date_created": {
+      "type": "string"
+    }
+  }
+}

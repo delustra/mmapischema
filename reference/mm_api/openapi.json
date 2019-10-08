@@ -1,0 +1,205 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "MM_API",
+    "version": "1.1",
+    "description": "MoreMobs API",
+    "contact": {
+      "name": "DeLustra"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://6d366176-a426-42d6-b068-14ee531c3195.mock.pstmn.io",
+      "description": "postman server"
+    },
+    {
+      "description": "local",
+      "url": " http://127.0.0.1:3100"
+    }
+  ],
+  "paths": {
+    "/killmob": {
+      "post": {
+        "summary": "/killmob",
+        "tags": [],
+        "description": "Method is called when the mob is killed",
+        "operationId": "postkillmob",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "operationID": {
+                    "type": "string"
+                  },
+                  "id": {
+                    "type": "string"
+                  },
+                  "remain": {
+                    "type": "integer",
+                    "default": 5,
+                    "description": "How many mobs left in the player queue. Having less than X mobs will trigger preparation of the new batch in advance."
+                  }
+                }
+              },
+              "examples": {
+                "TestMock": {
+                  "value": {
+                    "id": "testmob4",
+                    "PlayerId": "246accee-c923-4926-aafb-fd4a89fa0849"
+                  }
+                }
+              }
+            }
+          },
+          "description": ""
+        },
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "default": "PMAK-5d8fb40585c5df003c8ef8c0-9d06fdf950e3a771244a128b23aacb72a2"
+            },
+            "in": "header",
+            "name": "x-api-key",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/fetchlocation": {
+      "post": {
+        "summary": "",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "type": "string"
+                    },
+                    "locationid": {
+                      "type": "string"
+                    },
+                    "mobspack": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "./models/mob.v1.json"
+                      }
+                    }
+                  }
+                },
+                "examples": {
+                  "example-1": {}
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "playerid": {
+                    "type": "string",
+                    "format": "uuid",
+                    "example": "246accee-c923-4926-aafb-fd4a89fa0849"
+                  },
+                  "locationid": {
+                    "type": "string",
+                    "example": "default"
+                  },
+                  "mobcount": {
+                    "type": "integer",
+                    "default": 3
+                  },
+                  "operationID": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "playerid",
+                  "locationid"
+                ]
+              },
+              "examples": {
+                "example-1": {
+                  "value": {
+                    "PlayerId": "246accee-c923-4926-aafb-fd4a89fa0849",
+                    "locationid": "default",
+                    "mob_count": "3"
+                  }
+                }
+              }
+            }
+          },
+          "description": ""
+        },
+        "description": "Get Contents of the location",
+        "parameters": [
+          {
+            "schema": {
+              "type": "string",
+              "default": "PMAK-5d8fb40585c5df003c8ef8c0-9d06fdf950e3a771244a128b23aacb72a2"
+            },
+            "in": "header",
+            "name": "x-api-key",
+            "description": "",
+            "required": true
+          }
+        ]
+      },
+      "parameters": []
+    },
+    "/player/{playerid}": {
+      "parameters": [
+        {
+          "schema": {
+            "type": "string"
+          },
+          "name": "playerid",
+          "in": "path",
+          "required": true
+        }
+      ],
+      "get": {
+        "summary": "Your GET endpoint",
+        "tags": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./models/player.v1.json"
+                }
+              }
+            }
+          }
+        },
+        "description": "Login method"
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "x-api-key": {
+        "name": "PMAK-5d8fb40585c5df003c8ef8c0-9d06fdf950e3a771244a128b23aacb72a2",
+        "type": "apiKey",
+        "in": "header"
+      }
+    }
+  }
+}
