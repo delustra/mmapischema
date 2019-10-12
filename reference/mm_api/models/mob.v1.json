@@ -6,7 +6,7 @@
   "properties": {
     "id": {
       "type": "string",
-      "faker": "random.uuid"
+      "example": "{{objectId()}}"
     },
     "title": {
       "type": "object",
@@ -37,7 +37,7 @@
       "type": "integer",
       "description": "How many times was this exactm mob killed before",
       "format": "int32",
-      "minimum": 55
+      "example": 5
     }
   }
 }
