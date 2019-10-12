@@ -100,28 +100,32 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "object",
-                  "properties": {
-                    "title": {
-                      "type": "string",
-                      "example": "Example Location Title"
-                    },
-                    "locationid": {
-                      "type": "string",
-                      "example": "examp_loc_id"
-                    },
-                    "mobspack": {
-                      "type": "array",
-                      "uniqueItems": false,
-                      "maxItems": 4,
-                      "minItems": 3,
-                      "items": {
-                        "$ref": "./models/mob.v1.json"
-                      }
-                    }
+                  "type": "array",
+                  "items": {
+                    "$ref": "./models/mob.v1.json"
                   }
                 },
                 "examples": {}
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            },
+            "headers": {
+              "locationtitle": {
+                "schema": {
+                  "type": "string",
+                  "default": "Default Location"
+                }
+              },
+              "locationid": {
+                "schema": {
+                  "type": "string",
+                  "default": "defaultlocation"
+                }
               }
             }
           }
