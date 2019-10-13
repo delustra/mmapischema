@@ -114,20 +114,7 @@
                 }
               }
             },
-            "headers": {
-              "locationtitle": {
-                "schema": {
-                  "type": "string",
-                  "default": "Default Location"
-                }
-              },
-              "locationid": {
-                "schema": {
-                  "type": "string",
-                  "default": "defaultlocation"
-                }
-              }
-            }
+            "headers": {}
           }
         },
         "requestBody": {
