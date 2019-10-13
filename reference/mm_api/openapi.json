@@ -132,7 +132,7 @@
                   "mobcount": {
                     "type": "integer",
                     "default": 3
-                  },
+                  }
 
                 },
                 "required": [
