@@ -31,6 +31,9 @@
               "schema": {
                 "type": "object",
                 "properties": {
+                  "operationID": {
+                    "type": "string"
+                  },
                   "id": {
                     "type": "string"
                   },
@@ -133,7 +136,9 @@
                     "type": "integer",
                     "default": 3
                   },
-
+                  "operationID": {
+                    "type": "string"
+                  }
                 },
                 "required": [
                   "playerid",
