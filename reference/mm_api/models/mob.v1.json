@@ -6,7 +6,7 @@
   "properties": {
     "id": {
       "type": "string",
-      "example": "{{objectId()}}"
+      "example": "sdfsdfsdf"
     },
     "title": {
       "type": "object",
