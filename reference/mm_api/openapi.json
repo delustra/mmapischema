@@ -101,8 +101,6 @@
               "application/json": {
                 "schema": {
                   "type": "array",
-                  "minItems": 3,
-                  "maxItems": 5,
                   "items": {
                     "$ref": "./models/mob.v1.json"
                   }
